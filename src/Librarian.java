@@ -23,4 +23,9 @@ public class Librarian {
     public void cancelReservation(Book book) {
         book.setStatus("Доступна");
     }
+
+    public static void main(String[] args) {
+        Librarian admin = new Librarian((byte) 1, "Головний бібліотекар");
+        Librarian assistant = new Librarian((byte) 2, "Помічник бібліотекаря");
+    }
 }
